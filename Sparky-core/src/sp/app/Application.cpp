@@ -81,9 +81,9 @@ namespace sp {
 	void Application::OnEvent(events::Event& event)
 	{
 		m_DebugLayer->OnEvent(event);
-		if (event.IsHandled()) // TODO(Yan): Maybe this shouldn't happen
+		/*if (event.IsHandled()) // TODO(Yan): Maybe this shouldn't happen
 			return;
-
+			*/
 		for (int32 i = m_OverlayStack.size() - 1; i >= 0; i--)
 		{
 			m_OverlayStack[i]->OnEvent(event);

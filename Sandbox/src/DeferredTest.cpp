@@ -10,8 +10,6 @@ using namespace component;
 
 using namespace API;
 
-#if 0
-
 DeferredTest::DeferredTest()
 	: Layer3D(new Scene())
 {
@@ -104,5 +102,3 @@ void DeferredTest::OnRender(Renderer3D& renderer)
 void DeferredTest::OnEvent(sp::events::Event& event)
 {
 }
-
-#endif
